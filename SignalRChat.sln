@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat", "SignalRChat\SignalRChat.csproj", "{27E99622-F7CD-4479-8008-2062429F0627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Lib", "SignalRChat.Lib\SignalRChat.Lib.csproj", "{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Client", "SignalRChat.Client\SignalRChat.Client.csproj", "{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27E99622-F7CD-4479-8008-2062429F0627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E99622-F7CD-4479-8008-2062429F0627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E99622-F7CD-4479-8008-2062429F0627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E99622-F7CD-4479-8008-2062429F0627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
