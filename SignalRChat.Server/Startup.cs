@@ -14,17 +14,23 @@ namespace SignalRChat.Server
     {
         public void Configuration(IAppBuilder app)
         {
-            app.UseCors(CorsOptions.AllowAll);
             var container = new Container();
             var resolver = new SimpleInjectorDependencyResolver(container);
-            var config = new HubConfiguration();
+            var config = new HubConfiguration {EnableDetailedErrors = true};
 
+            // Register
             container.Register<IConnectionMapping<string>, ConnectionMapping<string>>(Lifestyle.Singleton);
             container.Register<ILogger, ConsoleLogger>();
 
+            // Assign resolvers
             config.Resolver = resolver;
+            GlobalHost.DependencyResolver = resolver;
 
-            // Any connection or hub wire up and configuration should go here
+            // Add pipelines
+            var errorPipeline = container.GetInstance<ErrorHandlingPipelineModule>();
+            GlobalHost.HubPipeline.AddModule(errorPipeline);
+
+            app.UseCors(CorsOptions.AllowAll);
             app.MapSignalR(config);
         }
     }

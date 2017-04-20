@@ -86,7 +86,10 @@
                     }
                     var request = { 'fromUsername': username, 'message': message };
                     // Call the Send method on the hub.
-                    chatProxy.server.sendBroadcastMessage(request);
+                    chatProxy.server.sendBroadcastMessage(request)
+                        .fail(function (e) {
+                            alert(e);
+                        });
                     // Clear text box and reset focus for next comment.
                     $('#message').val('').focus();
                 });
@@ -107,7 +110,10 @@
 
                     var request = { 'fromUsername': username, 'message': message };
                     // Call the Send method on the hub.
-                    chatProxy.server.sendDirectMessage(toUsername, request);
+                    chatProxy.server.sendDirectMessage(toUsername, request)
+                        .fail(function (e) {
+                            alert(e);
+                        });
                     // Clear text box and reset focus for next comment.
                     $('#message').val('').focus();
                 });

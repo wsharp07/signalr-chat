@@ -89,6 +89,7 @@
   <ItemGroup>
     <Compile Include="ConnectionMapping.cs" />
     <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="ErrorHandlingPipelineModule.cs" />
     <Compile Include="Hubs\ChatHub.cs" />
     <Compile Include="Hubs\IChatHub.cs" />
     <Compile Include="IConnectionMapping.cs" />

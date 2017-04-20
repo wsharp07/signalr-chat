@@ -17,6 +17,12 @@ namespace SignalRChat.Server.Hubs
             {
                 throw new ArgumentNullException(nameof(connections));
             }
+
+            if (logger == null)
+            {
+                throw new ArgumentNullException(nameof(logger));
+            }
+
             _connections = connections;
             _logger = logger;
         }
