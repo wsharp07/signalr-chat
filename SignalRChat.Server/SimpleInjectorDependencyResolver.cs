@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Microsoft.AspNet.SignalR;
 using SimpleInjector;
 
-namespace SignalRChat
+namespace SignalRChat.Server
 {
     public class SimpleInjectorDependencyResolver : DefaultDependencyResolver
     {

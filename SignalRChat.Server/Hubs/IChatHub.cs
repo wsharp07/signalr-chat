@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SignalRChat.Lib;
+﻿using SignalRChat.Lib;
 
-namespace SignalRChat.Hubs
+namespace SignalRChat.Server.Hubs
 {
     public interface IChatHub
     {

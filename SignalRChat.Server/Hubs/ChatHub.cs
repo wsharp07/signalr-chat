@@ -4,19 +4,21 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
 using SignalRChat.Lib;
 
-namespace SignalRChat.Hubs
+namespace SignalRChat.Server.Hubs
 {
     public class ChatHub : Hub, IChatHub
     {
         private readonly IConnectionMapping<string> _connections;
+        private readonly ILogger _logger;
 
-        public ChatHub(IConnectionMapping<string> connections)
+        public ChatHub(IConnectionMapping<string> connections, ILogger logger)
         {
             if (connections == null)
             {
                 throw new ArgumentNullException(nameof(connections));
             }
             _connections = connections;
+            _logger = logger;
         }
 
         public void SendBroadcastMessage(ChatMessage message)
@@ -38,6 +40,8 @@ namespace SignalRChat.Hubs
 
             _connections.Add(name, Context.ConnectionId);
 
+            _logger.Info($"{name} has entered the chat room");
+
             return base.OnConnected();
         }
 
@@ -46,6 +50,7 @@ namespace SignalRChat.Hubs
             string name = Context.QueryString["username"];
 
             _connections.Remove(name, Context.ConnectionId);
+            _logger.Info($"{name} has left the chat room");
 
             return base.OnDisconnected(stopCalled);
         }
@@ -58,6 +63,8 @@ namespace SignalRChat.Hubs
             {
                 _connections.Add(name, Context.ConnectionId);
             }
+
+            _logger.Info($"{name} has entered the chat room");
 
             return base.OnReconnected();
         }
