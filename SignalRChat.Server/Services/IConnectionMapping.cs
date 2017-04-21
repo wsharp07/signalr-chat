@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SignalRChat.Server
+namespace SignalRChat.Server.Services
 {
     public interface IConnectionMapping<T>
     {

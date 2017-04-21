@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SignalRChat.Server
+namespace SignalRChat.Server.Services
 {
     public class ConnectionMapping<T> : IConnectionMapping<T>
     {

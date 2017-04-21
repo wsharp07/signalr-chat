@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNet.SignalR.Hubs;
+﻿using Microsoft.AspNet.SignalR.Hubs;
+using SignalRChat.Server.Services;
 
-namespace SignalRChat.Server
+namespace SignalRChat.Server.Pipeline
 {
     public class ErrorHandlingPipelineModule : HubPipelineModule
     {

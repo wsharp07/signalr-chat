@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
 using Microsoft.Owin.Cors;
 using Owin;
+using SignalRChat.Server.Pipeline;
+using SignalRChat.Server.Services;
 using SimpleInjector;
 
 namespace SignalRChat.Server
