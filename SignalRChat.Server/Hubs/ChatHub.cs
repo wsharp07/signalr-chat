@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
-using SignalRChat.Lib;
+using SignalRChat.ServiceModel;
 
 namespace SignalRChat.Server.Hubs
 {

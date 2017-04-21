@@ -104,9 +104,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SignalRChat.Lib\SignalRChat.Lib.csproj">
-      <Project>{5c9c4671-b289-41bb-a72e-ccb9de1f318a}</Project>
-      <Name>SignalRChat.Lib</Name>
+    <ProjectReference Include="..\SignalRChat.ServiceModel\SignalRChat.ServiceModel.csproj">
+      <Project>{83f9a822-b5ee-415a-b884-10085a522c42}</Project>
+      <Name>SignalRChat.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

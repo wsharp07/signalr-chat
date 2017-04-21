@@ -1,4 +1,4 @@
-﻿using SignalRChat.Lib;
+﻿using SignalRChat.ServiceModel;
 
 namespace SignalRChat.Server.Hubs
 {

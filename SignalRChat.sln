@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Lib", "SignalRChat.Lib\SignalRChat.Lib.csproj", "{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Client", "SignalRChat.Client\SignalRChat.Client.csproj", "{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SignalRChat.Web", "SignalRChat.Web\SignalRChat.Web.xproj", "{30A2C14D-A47E-4C3B-A3D0-97F724CDC409}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.Server", "SignalRChat.Server\SignalRChat.Server.csproj", "{BEB54FB7-9C8F-409D-BF07-2C745E61BE6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRChat.ServiceModel", "SignalRChat.ServiceModel\SignalRChat.ServiceModel.csproj", "{83F9A822-B5EE-415A-B884-10085A522C42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C9C4671-B289-41BB-A72E-CCB9DE1F318A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F258B5EC-FA18-4E5C-8928-DDAC00E221E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{BEB54FB7-9C8F-409D-BF07-2C745E61BE6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEB54FB7-9C8F-409D-BF07-2C745E61BE6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEB54FB7-9C8F-409D-BF07-2C745E61BE6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83F9A822-B5EE-415A-B884-10085A522C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83F9A822-B5EE-415A-B884-10085A522C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83F9A822-B5EE-415A-B884-10085A522C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83F9A822-B5EE-415A-B884-10085A522C42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
